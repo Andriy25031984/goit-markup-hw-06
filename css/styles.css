@@ -215,16 +215,93 @@ background: rgba(0, 0, 0, 0.2);
   top: 8px;
   right: 8px;
 }
+.form-title{
+  margin-top: 40px;
+
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
 .form{
+
   width: 528px;
-  margin-left: auto;
-  margin-right: auto;
+
+  padding: 40px;
+  
 }
 .form-grup{
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 448px;
-  height: 40px;
+  height: 58px;
+  
+  margin-bottom: 28px;
 }
+.form-grup input{
+
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.form-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+.form-options{
+margin-bottom: 30px;
+
+  display: flex;
+
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+.checkbox::checked + svg{
+  background-color: var(--accent-color);
+}
+.form-sent{
+  display: flex;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+  width: 200px;
+  height: 50px;
+
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+ margin-left: auto;
+ margin-right: auto;
+}
+.form-coment{
+  display: flex;
+  flex-direction: column;
+}
+.form-coment input{
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.form-coment input::placeholder{
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
 
 /* pros */
 .title{
@@ -522,20 +599,22 @@ text-transform: uppercase;
 
 color: var(--white-color);
 }
-.box{
-  display: inline-block;
+.button-subscribe{
+
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+color: var(--white-color);
+}
+.field input{
+
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: #2F303A;
   align-items: center;
 }
-.button-subscribe{
-  width: 200px;
-  height: 50px;
-  background: var(--accent-color);
-color: var(--white-color);
-}
+
 
 /*portfolio*/
 
