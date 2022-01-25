@@ -48,7 +48,7 @@
                 <li class="contakt-nav-item">
                     <a class="contacts" href="tel:+380961111111">
                         <svg class="contacts-icon" width="10" height="16">
-                            <use href="images/icons.svg#icon-Vector"></use>
+                            <use href="images/icons.svg#icon-Vector11"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
@@ -288,7 +288,14 @@
                     <li class="client">
                         <a class="link-client" href="логотип">
                             <svg class="client-icon" width="106" height="60">
-                                <use href="images/icons.svg#icon-Logo"></use>
+                                <use href="images/icons.svg#icon-Logo1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client">
+                        <a class="link-client" href="логотип">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="images/icons.svg#icon-Logo-5-21"></use>
                             </svg>
                         </a>
                     </li>
@@ -296,13 +303,6 @@
                         <a class="link-client" href="логотип">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="images/icons.svg#icon-Logo-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client">
-                        <a class="link-client" href="логотип">
-                            <svg class="client-icon" width="106" height="60">
-                                <use href="images/icons.svg#icon-Logo-2"></use>
                             </svg>
                         </a>
                     </li>
@@ -378,17 +378,62 @@
                         </li>
                     </ul>
                 </li>
+                <li class="subscribe">
+                   <h2> Подпишитесь на рассылку</h2>
+                    <label class="field">
+                        <input class="box" type="email" name="subscribe" placeholder="E-mail">
+                        <button class="button-subscribe" type="submit">Подписаться 
+                            <svg class="icon-subscribe" width="24" height="24">
+                                <use href="images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </label>
+                </li>
             </ul>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p></p>
             <button data-modal-close class="closed" type="button">
                 <svg class=" button-closed" width="11" height="11">
                     <use href="images/icons.svg#icon-Vector1"></use>
                 </svg>
             </button>
+            <form class="form">
+                <h3>Оставьте свои данные, мы вам перезвоним</h3>
+                <label class="form-grup">
+                    Имя
+                   <svg width="18" height="18">
+                       <use href="images/icons.svg#icon-person-black-18dp-1"></use>
+                   </svg>
+                    <input type="text" name="name">
+                </label>
+                <label class="form-grup">
+                    Телефон
+                    <svg width="18" height="18">
+                        <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                    <input type="tel" name="tel">
+                </label>
+                <label class="form-grup">
+                    Почта
+                    <svg width="18" height="18">
+                        <use href="images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                    <input type="email" name="email">
+                </label>
+                <label class="form-grup">
+                    Комментарий
+                    <input type="text" name="coment">
+                </label>
+                <label class="form-grup">
+                    <input type="checkbox" name="consent">
+                    Соглашаюсь с рассылкой и принимаю Условия договора
+                </label>
+                <label class="form-grup">
+                    <button type="submit">Отправить</button>
+                </label>
+            </form>
         </div>
     </div>
     <script src="./modal.js"></script>

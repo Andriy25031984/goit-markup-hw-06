@@ -215,6 +215,16 @@ background: rgba(0, 0, 0, 0.2);
   top: 8px;
   right: 8px;
 }
+.form{
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-grup{
+  display: block;
+  width: 448px;
+  height: 40px;
+}
 
 /* pros */
 .title{
@@ -462,8 +472,7 @@ transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .bottom-title{
   color: var(--white-color);
-  font-family: Roboto;
-font-weight: 700;
+
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -502,6 +511,30 @@ text-transform: uppercase;
 }
 .bottom-icon:hover,.bottom-icon:focus{
   background-color: var(--accent-color);
+}
+.subscribe{
+  margin-left: 93px;
+
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--white-color);
+}
+.box{
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #2F303A;
+  align-items: center;
+}
+.button-subscribe{
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+color: var(--white-color);
 }
 
 /*portfolio*/
