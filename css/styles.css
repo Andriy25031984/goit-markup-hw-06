@@ -194,13 +194,13 @@ background: rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
 .modal{
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50% ,-50%);
 
- min-width: 528px;
-  min-height:  581px;
+min-width: 528px;
+min-height:  581px;
 
   background-color: #FFFFFF;
 }
@@ -228,22 +228,30 @@ color: #212121;
 }
 .form{
 
-  width: 528px;
+width: 528px;
 
-  padding: 40px;
+padding: 40px;
   
 }
 .form-grup{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 448px;
-  height: 58px;
+position: relative;
+width: 448px;
 
-  margin-bottom: 10px;
+margin-bottom: 10px;
 }
-.form-grup input{
+.form-text{
 
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: var(--primary-text-color);
+
+margin-bottom: 4px;
+}
+.form-imput{
+
+width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -252,19 +260,14 @@ padding-left: 42px;
 }
 .form-icon{
   position: absolute;
-  top: 50%;
-  left: 15px;
+top: 0;
+left: 0;
+ 
 }
 .form-options{
 margin-bottom: 30px;
 
 display: flex;
-
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-
-color: #757575;
 }
 .checkbox:checked +.tick{
 background-color: var(--accent-color);
@@ -275,6 +278,8 @@ display: flex;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+justify-content: center;
+cursor: pointer;
 
   width: 200px;
   height: 50px;
@@ -292,13 +297,14 @@ color: #FFFFFF;
 .form-coment{
   display: flex;
   flex-direction: column;
-}
-.form-coment input{
-  width: 448px;
-  height: 120px;
   margin-bottom: 20px;
 }
-.form-coment input::placeholder{
+.form-coments{
+  width: 448px;
+  height: 120px;
+  
+}
+.form-coments::placeholder{
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.01em;
