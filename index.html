@@ -335,9 +335,8 @@
     <!--footer-->
 
     <footer class="bottom">
-        <div class="container">
-            <ul class="bottom-tumb">
-                <li class="adress">
+        <div class="container bottom-tumb">
+                <div class="adress">
                     <a class="logo" href=""><span class="part-logo">Web</span>Studio</a>
                     <address>
                         <ul class="botom-list">
@@ -352,8 +351,8 @@
                             </li>
                         </ul>
                     </address>
-                </li>
-                <li class="social">
+                </div>
+                <div class="social">
                     <h2 class="bottom-title">присоединяйтесь</h2>
                     <ul class="bottom-list">
                         <li class="netvorks-list">
@@ -377,19 +376,18 @@
                                 </svg></a>
                         </li>
                     </ul>
-                </li>
-                <li class="subscribe">
-                   <h2> Подпишитесь на рассылку</h2>
-                    <label class="field">
+                </div>
+                <form class="form-bottom">
+                <div class="subscribe">
+                        <label class="bottom-label"> Подпишитесь на рассылку</label>
                         <input class="box" type="email" name="subscribe" placeholder="E-mail">
                         <button class="button-subscribe" type="submit">Подписаться 
                             <svg class="icon-subscribe" width="24" height="24">
                                 <use href="images/icons.svg#icon-icon-send"></use>
                             </svg>
                         </button>
-                    </label>
-                </li>
-            </ul>
+                </div>
+                </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -425,12 +423,12 @@
                 </div>
                  <div class="form-coment">
                 <label for="coment" class="form-text">Комментарий</label>
-                 <input type="text"class="form-coments" name="coment" id="coment" placeholder="Введите текст">
+                 <textarea class="form-coments" name="coment"rows="5" id="coment" placeholder="Введите текст"></textarea>
                  </div>
                 <div class="form-options"> 
                     <input type="checkbox" name="consent">
                     <svg width="16" height="15">
-                     <use class="tick" href="images/icons.svg#icon-Vector"></use>
+                     <use class="form-tick" href="images/icons.svg#icon-Vector"></use>
                     </svg>
                     <label class="form-text">Соглашаюсь с рассылкой и принимаю</label><a href="">Условия договора</a>
                 </div>

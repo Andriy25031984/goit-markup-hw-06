@@ -239,8 +239,8 @@ width: 448px;
 
 margin-bottom: 10px;
 }
-.form-text{
 
+.form-text{
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -250,7 +250,6 @@ color: var(--primary-text-color);
 margin-bottom: 4px;
 }
 .form-imput{
-
 width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -259,17 +258,36 @@ border-radius: 4px;
 padding-left: 42px;
 }
 .form-icon{
-  position: absolute;
-top: 0;
-left: 0;
+position: absolute;
+top: 50%;
+left: 12px;
  
+}
+.form-coment{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-coments{
+  width: 448px;
+ 
+  padding: 12px 16px;
+  
+}
+.form-coments::placeholder{
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
 }
 .form-options{
 margin-bottom: 30px;
 
 display: flex;
 }
-.checkbox:checked +.tick{
+.checkbox{}
+.checkbox:checked +.form-tick{
 background-color: var(--accent-color);
 background-image: url(../images/Vector\ \(7\).svg);
 }
@@ -294,24 +312,6 @@ color: #FFFFFF;
  margin-left: auto;
  margin-right: auto;
 }
-.form-coment{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.form-coments{
-  width: 448px;
-  height: 120px;
-  
-}
-.form-coments::placeholder{
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.01em;
-
-color: rgba(117, 117, 117, 0.5);
-}
-
 
 /* pros */
 .title{
@@ -567,6 +567,7 @@ text-transform: uppercase;
 }
 .bottom-tumb{
   display: flex;
+  align-items: baseline;
 }
 .social{
   margin-left: 70px;
@@ -599,30 +600,43 @@ text-transform: uppercase;
 .bottom-icon:hover,.bottom-icon:focus{
   background-color: var(--accent-color);
 }
+.form-bottom{
+  min-width: 570px ;
+  min-height: 86px;
+}
 .subscribe{
+ 
   margin-left: 93px;
+}
 
+.bottom-lable{
+
+font-weight: 700;
 font-size: 14px;
-line-height: 1.14;
+line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color: var(--white-color);
 }
-.button-subscribe{
-
-  width: 200px;
-  height: 50px;
-  background: var(--accent-color);
-color: var(--white-color);
-}
-.field input{
-
+.box{
+display: block;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: #2F303A;
-  align-items: center;
+ 
+  
+}
+.button-subscribe{
+display: flex;
+align-items: center;
+justify-content: center;
+  min-width: 200px;
+ min-height: 50px;
+  background: var(--accent-color);
+color: var(--white-color);
+
 }
 
 
