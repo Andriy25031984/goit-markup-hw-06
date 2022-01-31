@@ -377,17 +377,19 @@
                         </li>
                     </ul>
                 </div>
-                <form class="form-bottom">
                 <div class="subscribe">
-                        <label class="bottom-label"> Подпишитесь на рассылку</label>
-                        <input class="box" type="email" name="subscribe" placeholder="E-mail">
+                <form class="form-bottom">
+                    <h2 class="bottom-title"> Подпишитесь на рассылку</h2>
+                        <label for="signature" class="bottom-label">
+                        <input class="box" type="email" name="subscribe" id="signature" placeholder="E-mail">
                         <button class="button-subscribe" type="submit">Подписаться 
                             <svg class="icon-subscribe" width="24" height="24">
                                 <use href="images/icons.svg#icon-icon-send"></use>
                             </svg>
                         </button>
-                </div>
+                        </label>
                 </form>
+                </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -425,12 +427,11 @@
                 <label for="coment" class="form-text">Комментарий</label>
                  <textarea class="form-coments" name="coment"rows="5" id="coment" placeholder="Введите текст"></textarea>
                  </div>
-                <div class="form-options"> 
-                    <input type="checkbox" name="consent">
-                    <svg  width="16" height="15">
-                     <use class="form-tick" href="images/icons.svg#icon-Vector"></use>
-                    </svg>
-                    <label class="form-text">Соглашаюсь с рассылкой и принимаю</label><a href="">Условия договора</a>
+                <div class="form-options">
+                    <span class="form-tick"></span>
+                    <input class="checkbox" type="checkbox"name="consent" checked id="doc" >
+                    <label class="form-text" for="doc">Соглашаюсь с рассылкой и принимаю</label>
+                    <a href="">Условия договора</a> 
                 </div>
                     <button class="form-sent" type="submit">Отправить</button>
             </form>
