@@ -236,6 +236,7 @@ position: relative;
 width: 448px;
 
 margin-bottom: 10px;
+ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .form-grup:focus-visible{
   color: var(--accent-color);
@@ -250,9 +251,6 @@ color: var(--primary-text-color);
 
 margin-bottom: 4px;
 }
-.form-text:focus-visible{
-  color:var(--accent-color);
-}
 .form-imput{
 width: 448px;
 height: 40px;
@@ -261,6 +259,7 @@ border-radius: 4px;
 cursor: pointer;
 
 padding-left: 42px;
+ transition:border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .form-imput:focus{
   outline: none;
@@ -273,21 +272,26 @@ fill: var(--accent-color);
 position: absolute;
 top: 40px;
 left: 12px;
+ transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .form-coment{
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 .form-coments{
-  width: 448px;
+ width: 448px;
+height: 120px;
  
   padding: 12px 16px;
+   transition:border 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .form-coments:focus{
 outline: none;
 border:1px solid var(--accent-color);
+
 }
 .form-coments::placeholder{
 font-size: 14px;
@@ -316,8 +320,7 @@ background-color:var(--accent-color);
 background-image: url(../images/full-check.svg);
 }
 .form-consent{
-  display: flex;
-  margin-left: 9px;
+  display: inline;
 }
 .form-sent{
 display: flex;
