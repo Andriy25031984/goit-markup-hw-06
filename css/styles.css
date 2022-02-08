@@ -204,6 +204,8 @@ min-width: 528px;
 min-height:  581px;
 
   background-color: #FFFFFF;
+
+  padding: 40px;
 }
 .closed{
   position: absolute;
@@ -228,9 +230,7 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 .form{
-width: 528px;
-
-padding: 40px;
+width: 100%;
 }
 .form-grup{
 position: relative;
@@ -244,9 +244,9 @@ margin-bottom: 10px;
 }
 .form-text{
   display: inline-block;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
 
 color: var(--primary-text-color);
 
@@ -271,7 +271,7 @@ fill: var(--accent-color);
 }
 .form-icon{
 position: absolute;
-top: 40px;
+top: 50%;
 left: 12px;
  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
@@ -302,12 +302,10 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 .form-options{
-
-margin-bottom: 30px;
-
 display: flex;
 align-items: center;
 justify-content: center;
+padding: 7px;
 
 }
 
@@ -316,7 +314,6 @@ display: inline-block;
 
 width: 16px;
 height: 15px;
-padding-right:7px;
 
   border: 2px solid #212121;
   border-radius: 4px;
@@ -337,6 +334,8 @@ background-origin: border-box;
 }
 
 .form-sent{
+margin-top: 30px;
+
 display: flex;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
